@@ -38,39 +38,70 @@
     office:version="1.3">
   <office:scripts/>
   <office:font-face-decls>
-    <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
-    <style:font-face style:name="Lucida Sans" svg:font-family="&apos;Lucida Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
-    <style:font-face style:name="游ゴシック" svg:font-family="游ゴシック" style:font-family-generic="system" style:font-pitch="variable"/>
-    <style:font-face style:name="ＭＳ ゴシック" svg:font-family="&apos;ＭＳ ゴシック&apos;" style:font-adornments="標準" style:font-family-generic="modern" style:font-pitch="fixed"/>
+    <style:font-face style:name="Liberation Sans"
+        svg:font-family="&apos;Liberation Sans&apos;"
+        style:font-family-generic="swiss"
+        style:font-pitch="variable"/>
+    <style:font-face style:name="Lucida Sans"
+        svg:font-family="&apos;Lucida Sans&apos;"
+        style:font-family-generic="system"
+        style:font-pitch="variable"/>
+    <style:font-face style:name="游ゴシック"
+        svg:font-family="游ゴシック"
+        style:font-family-generic="system"
+        style:font-pitch="variable"/>
+    <style:font-face style:name="ＭＳ ゴシック"
+        svg:font-family="&apos;ＭＳ ゴシック&apos;"
+        style:font-adornments="標準"
+        style:font-family-generic="modern"
+        style:font-pitch="fixed"/>
   </office:font-face-decls>
   <office:automatic-styles>
     <style:style style:name="co1" style:family="table-column">
-      <style:table-column-properties fo:break-before="auto" style:column-width="2.258cm"/>
+      <style:table-column-properties fo:break-before="auto"
+          style:column-width="2.258cm"/>
     </style:style>
     <style:style style:name="co2" style:family="table-column">
-      <style:table-column-properties fo:break-before="auto" style:column-width="3.357cm"/>
+      <style:table-column-properties fo:break-before="auto"
+          style:column-width="3.357cm"/>
     </style:style>
     <style:style style:name="ro1" style:family="table-row">
-      <style:table-row-properties style:row-height="0.452cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+      <style:table-row-properties
+          style:row-height="0.452cm" fo:break-before="auto"
+          style:use-optimal-row-height="true"/>
     </style:style>
-    <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
+    <style:style style:name="ta1" style:family="table"
+        style:master-page-name="Default">
       <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
     </style:style>
     <number:number-style style:name="N81">
-      <number:scientific-number number:decimal-places="2" number:min-decimal-places="2" number:min-integer-digits="1" number:min-exponent-digits="2" number:exponent-interval="1" number:forced-exponent-sign="true"/>
+      <number:scientific-number number:decimal-places="2"
+          number:min-decimal-places="2"
+          number:min-integer-digits="1"
+          number:min-exponent-digits="2"
+          number:exponent-interval="1"
+          number:forced-exponent-sign="true"/>
     </number:number-style>
-    <style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N81"/>
+    <style:style style:name="ce1" style:family="table-cell"
+        style:parent-style-name="Default"
+        style:data-style-name="N81"/>
     <style:style style:name="T1" style:family="text">
       <style:text-properties fo:color="#ff0000"/>
     </style:style>
   </office:automatic-styles>
   <office:body>
     <office:spreadsheet>
-      <table:calculation-settings table:automatic-find-labels="false" table:use-regular-expressions="false" table:use-wildcards="true"/>
+      <table:calculation-settings
+          table:automatic-find-labels="false"
+          table:use-regular-expressions="false"
+          table:use-wildcards="true"/>
       <table:table table:name="Sheet1" table:style-name="ta1">
-        <table:table-column table:style-name="co1" table:default-cell-style-name="Default"/>
-        <table:table-column table:style-name="co1" table:default-cell-style-name="ce1"/>
-        <table:table-column table:style-name="co2" table:default-cell-style-name="Default"/>
+        <table:table-column table:style-name="co1"
+            table:default-cell-style-name="Default"/>
+        <table:table-column table:style-name="co1"
+            table:default-cell-style-name="ce1"/>
+        <table:table-column table:style-name="co2"
+            table:default-cell-style-name="Default"/>
         <table:table-row table:style-name="ro1">
           <table:table-cell office:value-type="float" office:value="123" calcext:value-type="float">
             <text:p>123</text:p>
