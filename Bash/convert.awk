@@ -4,6 +4,12 @@ BEGIN {
            tablename);
     printf("<table:table-column table:style-name=\"co1\"");
     printf(" table:default-cell-style-name=\"Default\"/>\n");
+
+    printf("<table:table-column table:style-name=\"co2\"");
+    printf(" table:default-cell-style-name=\"ce1\"/>\n");
+
+    printf("<table:table-column table:style-name=\"co2\"");
+    printf(" table:default-cell-style-name=\"Default\"/>\n");
 }
 
 {
