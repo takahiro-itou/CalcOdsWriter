@@ -28,7 +28,7 @@ for file in "$@" ; do
     name=${file%%*/}    # ディレクトリ名を除去
     cat "${file}"   \
         | gawk -F ',' -f "${script_dir}/convert.awk" -v tablename=${name} \
-        | tee -a content.body.xml
+        | tee -a "${work_dir}/content.body.xml"
 done
 
 pushd "${work_dir}"
