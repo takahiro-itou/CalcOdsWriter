@@ -16,11 +16,13 @@ BEGIN {
     printf("<table:table-row table:style-name=\"ro1\">\n");
     for ( c = 1; c <= NF; ++ c ) {
         cvalue = $c;
+        printf("<table:table-cell");
         if ( match(cvalue, /^[+-]?[0-9]+(\.[0-9]*)?([Ee][+-][0-9]+)?$/ ) ) {
-            printf("<table:table-cell office:value-type=\"float\" office:value=\"%s\">", cvalue);
+            printf(" office:value-type=\"float\" office:value=\"%s\"", cvalue);
         } else {
-            printf("<table:table-cell office:value-type=\"string\">");
+            printf(" office:value-type=\"string\"");
         }
+        printf(">");
         printf("<text:p>%s</text:p>", cvalue)
         printf("</table:table-cell>\n");
     }
