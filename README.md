@@ -16,4 +16,19 @@ zip Test.ods  META-INF/ styles.xml  content.xml
 後はプログラムを用いて content.xml  の中身を生成することができれば、
 内容は適当に書き換えることができる。
 
+##  おまけ
+
+おまけ機能として、テキストを
+
+```
+<text:span text:style-name="T1">...</text:span>
+```
+で括ることで、その部分を赤字にすることができる。
+
+赤以外の色にするには content.header.xml 内の 88 行目で
+スタイル T1 を定義している箇所を変更する。
+
+複数の色を使うには content.header.xml に追加のスタイルを定義し、
+上記の style-name を使い分ける。
+
 以上
