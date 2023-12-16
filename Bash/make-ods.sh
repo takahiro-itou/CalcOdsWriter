@@ -13,11 +13,11 @@ output_ods_name=$1
 shift 1
 
 mkdir -p "${work_root_dir}"
-work_dir=$(mktemp "${work_root_dir}/genods.XXXXXX")
+work_dir=$(mktemp -d "${work_root_dir}/genods.XXXXXX")
 
 # テンプレートをコピーする
 pushd "${script_dir}/../Templates"
-cp -pRv META-INF/ content.*.xml styles.xml "${work_dir}"
+cp -pRv META-INF/ content.*.xml styles.xml "${work_dir}/"
 pushd
 
 # 指定されたファイルから content.body.xml を生成する
