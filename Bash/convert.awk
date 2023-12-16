@@ -21,6 +21,7 @@ BEGIN {
             printf(" office:value-type=\"float\" office:value=\"%s\"", cvalue);
         } else {
             printf(" office:value-type=\"string\"");
+            printf(" calcext:value-type=\"string\"");
         }
         printf(">");
         printf("<text:p>%s</text:p>", cvalue)
