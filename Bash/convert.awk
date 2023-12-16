@@ -1,8 +1,9 @@
 
 BEGIN {
-    printf(
-        "<table:table table:name=\"%s\" table:style-name=\"ta1\">\n",
-        tablename);
+    printf("<table:table table:name=\"%s\" table:style-name=\"ta1\">\n",
+           tablename);
+    printf("<table:table-column table:style-name=\"co1\"");
+    printf(" table:default-cell-style-name=\"Default\"/>\n");
 }
 
 {
