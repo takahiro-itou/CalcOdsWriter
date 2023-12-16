@@ -19,6 +19,7 @@ BEGIN {
         printf("<table:table-cell");
         if ( match(cvalue, /^[+-]?[0-9]+(\.[0-9]*)?([Ee][+-][0-9]+)?$/ ) ) {
             printf(" office:value-type=\"float\" office:value=\"%s\"", cvalue);
+            printf(" calcext:value-type=\"float\"");
         } else {
             printf(" office:value-type=\"string\"");
             printf(" calcext:value-type=\"string\"");
