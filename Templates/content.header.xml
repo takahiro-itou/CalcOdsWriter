@@ -59,7 +59,7 @@
   <office:automatic-styles>
     <style:style style:name="co1" style:family="table-column">
       <style:table-column-properties fo:break-before="auto"
-          style:column-width="2.258cm"/>
+          style:column-width="6.218cm"/>
     </style:style>
     <style:style style:name="co2" style:family="table-column">
       <style:table-column-properties fo:break-before="auto"
