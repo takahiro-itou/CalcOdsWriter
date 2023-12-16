@@ -1,6 +1,8 @@
 
 BEGIN {
-    printf("<table:table table:name=\"%s\">\n", tablename);
+    printf(
+        "<table:table table:name=\"%s\" table:style-name=\"ta1\">\n",
+        tablename);
 }
 
 {
