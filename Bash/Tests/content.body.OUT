@@ -3,9 +3,7 @@
 <table:table-column table:style-name="co2" table:default-cell-style-name="ce1"/>
 <table:table-column table:style-name="co2" table:default-cell-style-name="Default"/>
 <table:table-row table:style-name="ro1">
-<table:table-cell office:value-type="string" calcext:value-type="string">
-<text:p>Test Normal Text</text:p>
-</table:table-cell>
+<table:table-cell office:value-type="string" calcext:value-type="string"><text:p>Test Normal Text</text:p></table:table-cell>
 <table:table-cell office:value-type="float" office:value="123" calcext:value-type="float"><text:p>123</text:p></table:table-cell>
 <table:table-cell office:value-type="float" office:value="1.00E+09" calcext:value-type="float"><text:p>1.00E+09</text:p></table:table-cell>
 </table:table-row>

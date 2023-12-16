@@ -13,7 +13,7 @@ BEGIN {
 }
 
 {
-    printf("<table:table-row>\n");
+    printf("<table:table-row table:style-name=\"ro1\">\n");
     for ( c = 1; c <= NF; ++ c ) {
         cvalue = $c;
         if ( match(cvalue, /^[+-]?[0-9]+(\.[0-9]*)?([Ee][+-][0-9]+)?$/ ) ) {
