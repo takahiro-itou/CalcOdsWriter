@@ -34,7 +34,7 @@ done
 pushd "${work_dir}"
 ls
 cat content.header.xml content.body.xml content.footer.xml > content.xml
-zip "Temp.ods"  META-INF/ styles.xml content.xml
+zip "Temp.ods"  META-INF/* styles.xml content.xml
 popd
 
 # 作業ディレクトリに作成した .ods ファイルを
