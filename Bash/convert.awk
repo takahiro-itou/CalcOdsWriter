@@ -18,7 +18,8 @@ BEGIN {
         cvalue = $c;
         printf("<table:table-cell");
         if ( match(cvalue, /^[+-]?[0-9]+(\.[0-9]*)?([Ee][+-][0-9]+)?$/ ) ) {
-            printf(" office:value-type=\"float\" office:value=\"%s\"", cvalue);
+            printf(" office:value-type=\"float\"");
+            printf(" office:value=\"%s\"", cvalue);
             printf(" calcext:value-type=\"float\"");
         } else {
             printf(" office:value-type=\"string\"");
