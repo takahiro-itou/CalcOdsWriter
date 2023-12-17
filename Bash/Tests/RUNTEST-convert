@@ -1,0 +1,37 @@
+#!/bin/bash  -xue
+
+script_dir=$(dirname "$0")
+
+test_work_dir="${script_dir}"
+test_data_dir="${test_work_dir}"
+
+pushd "${test_work_dir}"
+
+# CSV
+cat "${test_data_dir}/../sample.csv"  \
+    | gawk -F ',' -f ../convert.awk -v tablename=Sheet1  \
+    > content.body.xml
+
+ret=0
+diff -s content.body.xml content.body.OUT || ret=$?
+
+if [[ ${ret} -ne 0 ]] ; then
+    echo -e "\033[1;31;102;5mTest FAILURE!!\033[0m"
+    popd
+    exit ${ret}
+fi
+
+# TSV
+cat "${test_data_dir}/../sample.tsv"  \
+    | gawk -F '\t' -f ../convert.awk -v tablename=Sheet1  \
+    > content.body.xml
+
+ret=0
+diff -s content.body.xml content.body.OUT || ret=$?
+
+if [[ ${ret} -ne 0 ]] ; then
+    echo -e "\033[1;31;102;5mTest FAILURE!!\033[0m"
+fi
+
+popd
+exit ${ret}
