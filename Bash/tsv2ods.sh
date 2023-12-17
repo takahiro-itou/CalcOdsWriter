@@ -27,7 +27,7 @@ rm -f "${work_dir}/content.body.xml"
 for file in "$@" ; do
     name=${file%%*/}    # ディレクトリ名を除去
     cat "${file}"   \
-        | gawk -F ',' -f "${script_dir}/convert.awk" -v tablename=${name} \
+        | gawk -F '\t' -f "${script_dir}/convert.awk" -v tablename=${name} \
         | tee -a "${work_dir}/content.body.xml"
 done
 
