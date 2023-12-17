@@ -8,7 +8,7 @@ test_data_dir="${test_work_dir}"
 pushd "${test_work_dir}"
 
 # CSV
-cat "${test_data_dir}/input.csv"  \
+cat "${test_data_dir}/../sample.csv"  \
     | gawk -F ',' -f ../convert.awk -v tablename=Sheet1  \
     > content.body.xml
 
